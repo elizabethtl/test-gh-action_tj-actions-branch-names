@@ -16,6 +16,9 @@ jobs:
       - name: Get branch names.
         id: branch-names
         uses: tj-actions/branch-names@v8
+        run: |
+          echo "Running on default: ${{ steps.branch-names.outputs.current_branch }}" 
+          echo "Base branch: ${{ steps.branch-names.outputs.base_ref_branch }}"
       - run: echo random-number "$RANDOM_NUMBER"
         shell: bash
         env:
