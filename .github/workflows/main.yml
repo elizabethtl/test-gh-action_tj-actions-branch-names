@@ -15,7 +15,7 @@ jobs:
           who-to-greet: 'Mona the Octocat'
       - name: Get branch names.
         id: branch-names
-        uses: tj-actions/branch-names@v8
+        uses: tj-actions/branch-names@v6
       - run: echo random-number "$RANDOM_NUMBER"
         shell: bash
         env:
