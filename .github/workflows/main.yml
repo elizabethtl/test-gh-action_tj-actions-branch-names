@@ -24,7 +24,7 @@ jobs:
         uses: tj-actions/branch-names@v8
 
       - name: Get branch names.
-        id: branch-names-8.0.2
+        id: branch-names-8-0-2
         uses: tj-actions/branch-names@v8.0.2
 
         
